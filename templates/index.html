@@ -9,21 +9,21 @@
                         <h2>Search for citizen by name</h2>
 
                         <!-- Newsletter Form -->
-                        <form id="newsletterForm" data-toggle="validator" data-focus="false">
+                        <form  method="POST">
                             <div class="form-group">
                                 <input type="text" class="form-control-input" id="id_first_name" name="first_name"
                                        required>
-                                <label class="label-control" for="nemail">First Name</label>
+                                <label class="label-control" for="id_first_name">First Name</label>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">
                                 <input type="text" class="form-control-input" id="id_last_name" name="last_name"
                                        required>
-                                <label class="label-control" for="nemail">Last Name</label>
+                                <label class="label-control" for="id_last_name">Last Name</label>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="form-control-submit-button">SEARCH</button>
+                                <button type = "submit" value = "submit" class="form-control-submit-button">SEARCH</button>
                             </div>
                         </form>
                         <!-- end of newsletter form -->
