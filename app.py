@@ -1,6 +1,6 @@
 from flask import render_template, request
 
-from manage import app, mongo, Individual_GIS, Individual_EC, Individual_NHIA
+from manage import app, db,   mongo, Individual_GIS, Individual_EC, Individual_NHIA
 
 
 def add_citizens():
@@ -29,10 +29,10 @@ def add_citizens():
         "age": "25",
     }
     #
-    # db.session.add(citizen_1)  # Adds new User record to database
-    # db.session.add(citizen_2)  # Adds new User record to database
-    # db.session.add(citizen_3)  # Adds new User record to database
-    # db.session.commit()
+    db.session.add(citizen_1)  # Adds new User record to database
+    db.session.add(citizen_2)  # Adds new User record to database
+    db.session.add(citizen_3)  # Adds new User record to database
+    db.session.commit()
     mongo.db.individual_DVLA.insert(citizen_4)
 
 
