@@ -3,7 +3,7 @@ from flask_script import Manager
 from flask_migrate import Migrate, MigrateCommand
 from flask_sqlalchemy import SQLAlchemy
 from flask_pymongo import PyMongo
-from intsance.config import app_config
+from instance.config import app_config
 
 app = Flask(__name__, instance_relative_config=True)
 app.config.from_object(app_config['development'])
